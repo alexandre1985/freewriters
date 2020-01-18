@@ -2,15 +2,156 @@
 @import "../fontawesome/scss/fontawesome.scss";
 @import "../fontawesome/scss/brands.scss";
 @import "../fontawesome/scss/solid.scss";
-@import "../fontawesome/scss/regular.scss";
 
-.btn-li {
+.user-friends {
   @extend %fa-icon;
-  @extend .fab;
-  @extend .fa-lg;
+  @extend .fas;
 
   &:before {
-    content: fa-content($fa-var-linkedin-in);
+    content: fa-content($fa-var-user-friends);
   }
-  background-color: #0092e4;
+}
+
+.star {
+  @extend %fa-icon;
+  @extend .fas;
+
+  &:before {
+    content: fa-content($fa-var-star);
+  }
+}
+
+.laptop {
+  @extend %fa-icon;
+  @extend .fas;
+
+  &:before {
+    content: fa-content($fa-var-laptop);
+  }
+}
+
+.bookmark {
+  @extend %fa-icon;
+  @extend .fas;
+
+  &:before {
+    content: fa-content($fa-var-bookmark);
+  }
+}
+
+.chalkboard-teacher {
+  @extend %fa-icon;
+  @extend .fas;
+
+  &:before {
+    content: fa-content($fa-var-chalkboard-teacher);
+  }
+}
+
+.cloud-upload-alt {
+  @extend %fa-icon;
+  @extend .fas;
+
+  &:before {
+    content: fa-content($fa-var-cloud-upload-alt);
+  }
+}
+
+.registered {
+  @extend %fa-icon;
+  @extend .fas;
+
+  &:before {
+    content: fa-content($fa-var-registered);
+  }
+}
+
+.download {
+  @extend %fa-icon;
+  @extend .fas;
+
+  &:before {
+    content: fa-content($fa-var-download);
+  }
+}
+
+.envelope {
+  @extend %fa-icon;
+  @extend .fas;
+
+  &:before {
+    content: fa-content($fa-var-envelope);
+  }
+}
+
+.handshake {
+  @extend %fa-icon;
+  @extend .fas;
+
+  &:before {
+    content: fa-content($fa-var-handshake);
+  }
+}
+
+.book-open {
+  @extend %fa-icon;
+  @extend .fas;
+
+  &:before {
+    content: fa-content($fa-var-book-open);
+  }
+}
+
+.creative-commons-nc {
+  @extend %fa-icon;
+  @extend .fab;
+
+  &:before {
+    content: fa-content($fa-var-creative-commons-nc);
+  }
+}
+
+.creative-commons {
+  @extend %fa-icon;
+  @extend .fab;
+
+  &:before {
+    content: fa-content($fa-var-creative-commons);
+  }
+}
+
+.facebook-f {
+  @extend %fa-icon;
+  @extend .fab;
+
+  &:before {
+    content: fa-content($fa-var-facebook-f);
+  }
+}
+
+.youtube {
+  @extend %fa-icon;
+  @extend .fab;
+
+  &:before {
+    content: fa-content($fa-var-youtube);
+  }
+}
+
+.instagram {
+  @extend %fa-icon;
+  @extend .fab;
+
+  &:before {
+    content: fa-content($fa-var-instagram);
+  }
+}
+
+.arrow-right {
+  @extend %fa-icon;
+  @extend .fas;
+
+  &:before {
+    content: fa-content($fa-var-arrow-right);
+  }
 }

@@ -1,0 +1,14 @@
+{
+    "name": "FreeWriters",
+    "short_name": "FreeWriters",
+    "icons": [
+        {
+            "src": "/assets/img/favicon/android-chrome-72x72.png?v=LbzdWxwRQw",
+            "sizes": "72x72",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#fbe9dd",
+    "background_color": "#fbe9dd",
+    "display": "standalone"
+}

@@ -1,0 +1,1 @@
+{% for link in site.social %}{% if forloop.index0 != 0 %},{% endif %}"{{ link[1] }}"{% endfor %}

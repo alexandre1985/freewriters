@@ -1,0 +1,10 @@
+"@type": "NGO",
+"name": "{{ site.name }}",
+"description": "{{ site.description }}",
+"email": "{{ site.email }}",
+"image": "https://www.freewriters.org/assets/img/wix-logo-big-final.png",
+"logo": "https://www.freewriters.org/assets/img/wix-logo-big-final.png",
+"url": "{{ site.url }}",
+"sameAs": [ {% include seo/schema/social-links.json %} ],
+"address": "Worldwide, Earth",
+"founder": { {% include seo/schema/me.json %} }

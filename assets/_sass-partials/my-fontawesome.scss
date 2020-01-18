@@ -1,0 +1,16 @@
+// fontawesome
+@import "../fontawesome/scss/fontawesome.scss";
+@import "../fontawesome/scss/brands.scss";
+@import "../fontawesome/scss/solid.scss";
+@import "../fontawesome/scss/regular.scss";
+
+.btn-li {
+  @extend %fa-icon;
+  @extend .fab;
+  @extend .fa-lg;
+
+  &:before {
+    content: fa-content($fa-var-linkedin-in);
+  }
+  background-color: #0092e4;
+}

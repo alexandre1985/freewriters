@@ -1,0 +1,18 @@
+#!/bin/bash
+
+MAIN_JS=script.js
+
+# js uglify
+cd assets/js/
+
+rm ${MAIN_JS}
+
+for file in *[^.min].js
+do
+	if [[ "${file}" == "${MAIN_JS}" ]]; then
+		continue
+	fi
+	(cat ${file};echo) >> ${MAIN_JS}
+done
+
+exit 0

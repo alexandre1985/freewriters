@@ -1,0 +1,15 @@
+"@type": "BlogPosting",
+"author": { {% include seo/schema/me.json %} },
+"dateCreated": "{{ page.date | date: '%F' }}",
+"dateModified": "{{ page.last_modified_at | date: '%F' }}",
+"datePublished": "{{ page.date | date: '%F' }}",
+"description": "{{ page.excerpt | strip_html | strip }}",
+"headline": "{{ page.title }}",
+"inLanguage": "{{ site.lang }}",
+"image": { "@type":"ImageObject", "url": "{{ site.url }}{{ page.image | default: '/assets/img/me.jpg' }}" },
+"isAccessibleForFree": true,{% 
+if page.keywords %}"keywords": "{{ page.keywords }}",{% endif %}
+"mainEntityOfPage":{ "@type":"WebPage", "@id":"{{ site.url }}{{ site.baseurl }}" },
+"name": "{{ page.title }}"
+"publisher": { {% include seo/schema/me.json %} },
+"url": "{{ site.url }}{{ site.baseurl }}"

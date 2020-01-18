@@ -1,0 +1,150 @@
+---
+description: In this page you can upload your own books to the world
+---
+<div class="container">
+    <h1>Book Upload</h1>
+    <div id="form-container">
+        <p style="font-size: 15px;"><strong><span style="text-decoration: underline;">IMPORTANT</span>:</strong>&#xA0;Before uploading be sure that your file has <em>you</em>&#xA0;as the owner. Check&#xA0;<a href="/library-book-ownership/">this page</a>&#xA0;for more info.</p>
+        <form id="form-book-upload" action="/library-upload.php?processed=1" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <input class="form-control" type="hidden" name="csrf_token" value="<?php echo $token; ?>">
+            </div>
+            <div class="form-group">
+                <input class="form-control" type="hidden" name="MAX_FILE_SIZE" value="10485760">
+            </div>
+            <div class="form-group">
+                <input class="form-control" type="text" name="book-title" required placeholder="Book Title" autofocus>
+            </div>
+            <div class="form-group">
+                <input class="form-control" type="text" name="book-author-name" required placeholder="Book Author Name">
+            </div>
+            <div class="form-group">
+                <select class="form-control" name="book-genre" required>
+                    <option value selected disabled>Select your option</option>
+                    <optgroup label="Fiction">
+                        <option value="Drama">Drama</option>
+                        <option value="Erotica">Erotica</option>
+                        <option value="Fiction">Fiction</option>
+                        <option value="Flash Fiction">Flash Fiction</option>
+                        <option value="Horror-Gothic">Horror-Gothic</option>
+                        <option value="Humor">Humor</option>
+                        <option value="Mystery">Mystery</option>
+                        <option value="Poetry">Poetry</option>
+                        <option value="Romance">Romance</option>
+                        <option value="Sci-fi Fantasy">Sci-fi Fantasy</option>
+                        <option value="Short Stories">Short Stories</option>
+                        <option value="Youth">Youth</option>
+                    </optgroup>
+                    <optgroup label="Non-Fiction">
+                        <option value="Advertisement">Advertisement</option>
+                        <option value="Animals &amp; Pets">Animals &amp; Pets</option>
+                        <option value="Beauty &amp; Fashion">Beauty &amp; Fashion</option>
+                        <option value="Biography">Biography</option>
+                        <option value="Body &amp; Spirit">Body &amp; Spirit</option>
+                        <option value="Business">Business</option>
+                        <option value="Career">Career</option>
+                        <option value="Computer &amp; Internet">Computer &amp; Internet</option>
+                        <option value="Economy">Economy</option>
+                        <option value="Educational">Educational</option>
+                        <option value="Fitness">Fitness</option>
+                        <option value="Food/Recipes">Food/Recipes</option>
+                        <option value="Games">Games</option>
+                        <option value="General Non Fiction">General Non Fiction</option>
+                        <option value="Health">Health</option>
+                        <option value="History">History</option>
+                        <option value="Human Rights">Human Rights</option>
+                        <option value="International">International</option>
+                        <option value="Marketing">Marketing</option>
+                        <option value="Miscellaneous">Miscellaneous</option>
+                        <option value="Network Marketing">Network Marketing</option>
+                        <option value="Parenting/Children">Parenting/Children</option>
+                        <option value="Philosophy">Philosophy</option>
+                        <option value="Politics">Politics</option>
+                        <option value="Psychology">Psychology</option>
+                        <option value="Recreation &amp; Hobby">Recreation &amp; Hobby</option>
+                        <option value="Reference">Reference</option>
+                        <option value="Religious">Religious</option>
+                        <option value="Science">Science</option>
+                        <option value="Self-Improvement">Self-Improvement</option>
+                        <option value="Travel">Travel</option>
+                        <option value="Tutorials">Tutorials</option>
+                        <option value="Web Design">Web Design</option>
+                        <option value="Writing &amp; Publishing">Writing &amp; Publishing</option>
+                    </optgroup>
+                    <optgroup label="Academic">
+                        <option value="Academic Articles">Academic Articles</option>
+                        <option value="Anthropology">Anthropology</option>
+                        <option value="Archives">Archives</option>
+                        <option value="Classic Literature">Classic Literature</option>
+                        <option value="Communications">Communications</option>
+                        <option value="Economics">Economics</option>
+                        <option value="Engineering">Engineering</option>
+                        <option value="Environment">Environment</option>
+                        <option value="Gender Studies">Gender Studies</option>
+                        <option value="Geography">Geography</option>
+                        <option value="History">History</option>
+                        <option value="Humanities and Arts">Humanities and Arts</option>
+                        <option value="LGBT Studies">LGBT Studies</option>
+                        <option value="Mathematics">Mathematics</option>
+                        <option value="Medical">Medical</option>
+                        <option value="Memoirs &amp; Biography">Memoirs &amp; Biography</option>
+                        <option value="Philosophy">Philosophy</option>
+                        <option value="Postmodernism">Postmodernism</option>
+                        <option value="Psychology &amp; Culture">Psychology &amp; Culture</option>
+                        <option value="Religion">Religion</option>
+                        <option value="Robotics">Robotics</option>
+                        <option value="Science">Science</option>
+                        <option value="Sociology">Sociology</option>
+                        <option value="Teacher&apos;s Resources">Teacher&apos;s Resources</option>
+                        <option value="Technology">Technology</option>
+                        <option value="Travel">Travel</option>
+                    </optgroup>
+                    <optgroup label="Textbooks">
+                        <option value="Business">Business</option>
+                        <option value="Computer Sciences">Computer Sciences</option>
+                        <option value="Engineering">Engineering</option>
+                        <option value="Law">Law</option>
+                        <option value="Mathematics">Mathematics</option>
+                        <option value="Science">Science</option>
+                        <option value="World">World</option>
+                    </optgroup>
+                    <optgroup label="Others">
+                        <option value="Free Previews">Free Previews</option>
+                        <option value="Magazines">Magazines</option>
+                    </optgroup>
+                    <optgroup label="Classics">
+                        <option value="Children&apos;s Classics">Children&apos;s Classics</option>
+                        <option value="Drama Classics">Drama Classics</option>
+                        <option value="Fiction Classics">Fiction Classics</option>
+                        <option value="Horror Classics">Horror Classics</option>
+                        <option value="Humor Classics">Humor Classics</option>
+                        <option value="Misc Classics">Misc Classics</option>
+                        <option value="Mystery Classics">Mystery Classics</option>
+                        <option value="Poetry Classics">Poetry Classics</option>
+                        <option value="Romance Classics">Romance Classics</option>
+                        <option value="Sci-Fi Classics">Sci-Fi Classics</option>
+                        <option value="Short Stories Classics">Short Stories Classics</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div class="form-group">
+                <textarea class="form-control" name="book-description" required placeholder="Description" minlength="10" maxlength="255" rows="4"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="cover"><em><span style="text-decoration: underline;">Book Cover</span>&#xA0;</em>:&#xA0;</label>
+                <input id="cover" type="file" name="cover-book-file" accept=".png, .jpg, .bmp, image/png,image/jpeg,image/bmp">
+            </div>
+            <div class="form-group">
+                <label for="pdf"><em><span style="text-decoration: underline;">Book PC (PDF)</span>&#xA0;</em>:&#xA0;</label>
+                <input id="pdf" type="file" class="book" name="pdf-book-file[]" multiple accept=".pdf, .sig, application/pdf,application/pgp-signature">
+            </div>
+            <div class="form-group">
+                <label for="epub"><em><span style="text-decoration: underline;">Book Mobile (EPUB)</span>&#xA0;</em>:&#xA0;</label>
+                <input id="epub" type="file" class="book" name="epub-book-file[]" multiple accept=".epub, .sig, application/epub+zip,application/pgp-signature">
+            </div>
+            <div class="form-group">
+                <button class="btn btn-primary btn-lg d-flex mx-auto" type="submit">Upload</button>
+            </div>
+        </form>
+    </div>
+</div>

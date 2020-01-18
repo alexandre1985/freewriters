@@ -1,0 +1,11 @@
+#checkbox-menu-toggle:not(:checked) + .navbar-collapse {
+  display: none;
+}
+
+label[for=checkbox-menu-toggle] {
+  cursor: pointer;
+}
+
+.dropdown-menu.show {
+  display: block;
+}

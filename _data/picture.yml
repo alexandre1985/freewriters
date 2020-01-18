@@ -1,0 +1,4 @@
+# Picture Tag
+markup_presets:
+  default:
+    formats: [webp]

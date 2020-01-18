@@ -1,0 +1,30 @@
+#!/bin/bash
+
+CMD_BUILD="JEKYLL_ENV=production bundle exec jekyll build"
+
+# Bundle Javascripts
+
+./bundle
+
+# UglifyJS
+
+./uglify
+
+
+# Build
+
+#JEKYLL_ENV=production bundle exec jekyll build && JEKYLL_ENV=production bundle exec jekyll build
+
+eval "${CMD_BUILD}"
+
+
+# Critical for CSS
+
+# cd _site
+# for file in $(find ./ -type f -name '*.html'); do
+# 	_FILE=`cat ${file}`
+# 	echo "$_FILE" | critical --base ./ --folder "`dirname ${file}`/" --inline > ${file}
+# done
+
+
+exit 0

@@ -1,0 +1,65 @@
+<nav class="navbar navbar-dark navbar-expand-lg" style="background-color: rgba(25,3,3,0.8);">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/">
+            {% include element/img.html src="/assets/img/logo-transparent-texto-branco.webp" alt="FreeWriters logo" %}
+        </a>
+        <label for="checkbox-menu-toggle" class="navbar-toggler" aria-controls="navbarSupportedContent" aria-label="Toggle navigation">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="navbar-toggler-icon"></span>
+        </label>
+
+        <input type="checkbox" id="checkbox-menu-toggle" class="d-none">
+
+        <div class="navbar-collapse" id="navcol-1">
+            <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/about/">
+                        <i class="fas fa-user-friends"></i>&#xA0;About
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a data-toggle="dropdown" class="dropdown-toggle nav-link" href="#">
+                        <i class="fas fa-star"></i>&#xA0;Resources
+                    </a>
+                    <div class="dropdown-menu text-justify">
+                        <a class="dropdown-item" href="/free-software/">
+                            <i class="fas fa-laptop"></i>&#xA0;Free Software
+                        </a>
+                        <a class="dropdown-item" href="/latex-templates/">
+                            <i class="far fa-bookmark"></i>&#xA0;Book Templates
+                        </a>
+                        <a class="dropdown-item" href="/learning/">
+                            <i class="fas fa-chalkboard-teacher"></i>&#xA0;Learning
+                        </a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a data-toggle="dropdown" class="dropdown-toggle nav-link" href="#">
+                        <i class="fas fa-book-open"></i>&#xA0;Library
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="/library-upload/">
+                            <i class="fas fa-cloud-upload-alt"></i>&#xA0;Book Upload
+                        </a>
+                        <a class="dropdown-item" href="/library-book-ownership/">
+                            <i class="far fa-registered"></i>&#xA0;Book Ownership
+                        </a>
+                        <a class="dropdown-item" href="/library/">
+                            <i class="fas fa-download"></i>&#xA0;Get Books
+                        </a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact/">
+                        <i class="fas fa-envelope"></i>&#xA0;Contact
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/join-us/">
+                        <i class="fas fa-handshake"></i>&#xA0;Join us
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

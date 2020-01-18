@@ -1,0 +1,19 @@
+---
+---
+
+$baseurl: "{{ site.baseurl }}";
+
+$fundo2: $baseurl + "{{ '/assets/images/fundo2.jpg' | bustify }}";
+
+// Partials
+
+@import "bootstrap";
+@import "customizable-background-overlay";
+@import "footer-clean";
+@import "highlight-phone";
+@import "freewriters";
+@import "styles";
+@import "contact-form-clean";
+@import "nojquery-toggler";
+
+@import "my-fontawesome";

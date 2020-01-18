@@ -1,0 +1,128 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+
+# deixar baseurl estar como está! a não ser que queiras o website a começar fora da /
+baseurl: "" # the subpath of your site, e.g. /blog
+
+name: FreeWriters
+title: "FreeWriters | Empowering Writers"
+url: "https://www.freewriters.org" # the base hostname & protocol for your site, e.g. https://example.com
+description: "We want to teach people how to create a book for free, without any expenses, using free LaTeX technology." # >- # this means to ignore newlines
+email: contact@freewriters.org
+
+social:
+  facebook: https://fb.me/freewriters.community
+  youtube: https://www.youtube.com/channel/UC_Dm9m3Zi6tEYA8rJt3OqVw
+  pixelfed: https://www.instagram.com/freewriters.community/
+
+
+# jekyll-seo-tag plugin variables
+webmaster_verifications:
+  yandex: 12f2ab4427963189
+  bing: 954AF4DE097E67B44819FBBAF587250D
+
+# google analytics
+#google_analytics:
+
+# SEO Schema
+founder:
+  site: https://www.brighterdan.com
+  social:
+  - https://www.linkedin.com/in/alexandre1985/
+  - https://github.com/alexandre1985/
+  - https://stackoverflow.com/users/1930275/alexandre1985/
+  - https://www.minds.com/danisantos/
+  - https://mstdn.io/@danisantos/
+  - https://peertube.social/accounts/danisantos/video-channels/
+  - https://pxlfd.me/danisantos/
+
+# jekyll-multiple-languages-plugin
+
+## site languages
+languages: ['en']
+
+### flags country codes (fetch from https://www.countryflags.io/ - in more in that website)
+### must be in the same order as the "language" variable
+#flags: ["pt", "gb"]
+
+## files/directories to exclude from being inserted in each language folder
+#exclude_from_localizations: ["assets", "favicon.ico", "CNAME", "LICENSE"]
+
+# local (on-premise) storage
+local:
+  fonts: /assets/fonts/
+  css: /assets/css/
+  flags: /assets/images/flags/
+  javascript: /assets/js/
+
+# SASS
+sass:
+  sass_dir: assets/_sass-partials
+  style: compressed
+
+# UnCSS
+uncss:
+  stylesheets:            # a list of stylesheets to be processed; mandatory
+    - assets/css/styles.css
+  files:                  # html files to consider, globs are supported; default: **/*.html
+    - "**/*.html"
+  compress: false          # compress resulting css with sass; default: false
+  media:                  # additional media queries to consider; default: undefined
+    - print
+  timeout: 30             # how long to wait for the JS to be loaded; default: undefined
+
+# global layout definition
+
+defaults:
+  - scope:
+      type: "pages"
+    values:
+      layout: "base"
+
+
+# Build settings
+
+permalink: pretty
+
+compress_html:
+  ignore:
+    envs: ['development']
+
+# enable this if you want to process markdown files (*.md) on this site
+# markdown: kramdown
+
+plugins:
+  - jekyll-multiple-languages-plugin
+  - jekyll-last-modified-at
+  - jekyll-sitemap
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+exclude:
+  - sql-files
+  - uglify
+  - build
+  - README.md
+  - .git/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/

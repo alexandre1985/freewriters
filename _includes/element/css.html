@@ -1,0 +1,5 @@
+{% assign protocol = include.asset | slice: 0, 3 %}{% 
+if protocol == 'http' %}
+<link rel="stylesheet" href="{{ include.asset }}" crossorigin="anonymous">{%
+else %}<link rel="stylesheet" href="{{ include.asset | bustify }}" crossorigin="anonymous">{% 
+endif %}

@@ -3,11 +3,13 @@
 
 $baseurl: "{{ site.baseurl }}";
 
-$fundo2: $baseurl + "{{ '/assets/images/fundo2.jpg' | bustify }}";
+$fontDir: "{{ site.local.fonts }}";
 
 // Partials
 
-// as to be commented out and in a css apart (because of uncss) @import "bootstrap";
+@import "fonts-local";
+
+// has to be commented out and in a css apart (because of uncss) @import "bootstrap";
 
 @import "customizable-background-overlay";
 @import "footer-clean";

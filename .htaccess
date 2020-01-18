@@ -1,7 +1,8 @@
 AddType application/x-httpd-php .html
 ErrorDocument 404 /404/
 
-# Cache for SEO
+# SEO
+## Cache
 <IfModule mod_expires.c>
   ExpiresActive On
 
@@ -26,3 +27,9 @@ ErrorDocument 404 /404/
   ExpiresByType application/pdf "access plus 1 month"
   ExpiresByType application/x-shockwave-flash "access plus 1 month"
 </IfModule>
+
+## http headers
+AddDefaultCharset UTF-8
+
+### fonts headers
+AddType application/x-font-woff2 .woff2

@@ -7,13 +7,15 @@ $fundo2: $baseurl + "{{ '/assets/images/fundo2.jpg' | bustify }}";
 
 // Partials
 
-@import "bootstrap";
+// as to be commented out and in a css apart (because of uncss) @import "bootstrap";
+
 @import "customizable-background-overlay";
 @import "footer-clean";
 @import "highlight-phone";
 @import "freewriters";
 @import "styles";
 @import "contact-form-clean";
+
 @import "nojquery-toggler";
 
 @import "my-fontawesome";

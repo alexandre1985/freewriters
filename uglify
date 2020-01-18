@@ -5,7 +5,7 @@ cd assets/js/
 
 for file in *[^.min].js
 do
-	terser $file --compress --mangle > "${file%.*}.min.js"
+	terser ${file} --compress --mangle > "${file%.*}.min.js"
 done
 
 exit 0

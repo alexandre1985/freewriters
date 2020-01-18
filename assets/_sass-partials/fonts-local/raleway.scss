@@ -1,0 +1,143 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url($fontFolder + 'Raleway/raleway-black-webfont.woff2') format('woff2'),
+         url($fontFolder + 'Raleway/raleway-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+};
+
+@font-face {
+    font-family: 'Raleway';
+    src: url($fontFolder + 'Raleway/raleway-blackitalic-webfont.woff2') format('woff2'),
+         url($fontFolder + 'Raleway/raleway-blackitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+};
+
+@font-face {
+    font-family: 'Raleway';
+    src: url($fontFolder + 'Raleway/raleway-extrabold-webfont.woff2') format('woff2'),
+         url($fontFolder + 'Raleway/raleway-extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+};
+
+@font-face {
+    font-family: 'Raleway';
+    src: url($fontFolder + 'Raleway/raleway-extrabolditalic-webfont.woff2') format('woff2'),
+         url($fontFolder + 'Raleway/raleway-extrabolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+};
+
+@font-face {
+    font-family: 'Raleway';
+    src: url($fontFolder + 'Raleway/raleway-bold-webfont.woff2') format('woff2'),
+         url($fontFolder + 'Raleway/raleway-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+};
+
+@font-face {
+    font-family: 'Raleway';
+    src: url($fontFolder + 'Raleway/raleway-bolditalic-webfont.woff2') format('woff2'),
+         url($fontFolder + 'Raleway/raleway-bolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+};
+
+@font-face {
+    font-family: 'Raleway';
+    src: url($fontFolder + 'Raleway/raleway-semibold-webfont.woff2') format('woff2'),
+         url($fontFolder + 'Raleway/raleway-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+};
+
+@font-face {
+    font-family: 'Raleway';
+    src: url($fontFolder + 'Raleway/raleway-semibolditalic-webfont.woff2') format('woff2'),
+         url($fontFolder + 'Raleway/raleway-semibolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+};
+
+@font-face {
+    font-family: 'Raleway';
+    src: url($fontFolder + 'Raleway/raleway-medium-webfont.woff2') format('woff2'),
+         url($fontFolder + 'Raleway/raleway-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+};
+
+@font-face {
+    font-family: 'Raleway';
+    src: url($fontFolder + 'Raleway/raleway-mediumitalic-webfont.woff2') format('woff2'),
+         url($fontFolder + 'Raleway/raleway-mediumitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+};
+
+@font-face {
+    font-family: 'Raleway';
+    src: url($fontFolder + 'Raleway/raleway-italic-webfont.woff2') format('woff2'),
+         url($fontFolder + 'Raleway/raleway-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+};
+
+@font-face {
+    font-family: 'Raleway';
+    src: url($fontFolder + 'Raleway/raleway-regular-webfont.woff2') format('woff2'),
+         url($fontFolder + 'Raleway/raleway-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+};
+
+@font-face {
+    font-family: 'Raleway';
+    src: url($fontFolder + 'Raleway/raleway-light-webfont.woff2') format('woff2'),
+         url($fontFolder + 'Raleway/raleway-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+};
+
+@font-face {
+    font-family: 'Raleway';
+    src: url($fontFolder + 'Raleway/raleway-lightitalic-webfont.woff2') format('woff2'),
+         url($fontFolder + 'Raleway/raleway-lightitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+};
+
+@font-face {
+    font-family: 'Raleway';
+    src: url($fontFolder + 'Raleway/raleway-extralight-webfont.woff2') format('woff2'),
+         url($fontFolder + 'Raleway/raleway-extralight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+};
+
+@font-face {
+    font-family: 'Raleway';
+    src: url($fontFolder + 'Raleway/raleway-extralightitalic-webfont.woff2') format('woff2'),
+         url($fontFolder + 'Raleway/raleway-extralightitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+};
+
+@font-face {
+    font-family: 'Raleway';
+    src: url($fontFolder + 'Raleway/raleway-thin-webfont.woff2') format('woff2'),
+         url($fontFolder + 'Raleway/raleway-thin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+};
+
+@font-face {
+    font-family: 'Raleway';
+    src: url($fontFolder + 'Raleway/raleway-thinitalic-webfont.woff2') format('woff2'),
+         url($fontFolder + 'Raleway/raleway-thinitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+};

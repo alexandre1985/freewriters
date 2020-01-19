@@ -22,11 +22,11 @@ eval "${CMD_BUILD}"
 
 echo "Doing the Critical CSS..."
 
-cd _site
-for file in $(find ./ -type f -name '*.html'); do
-	_FILE=`cat ${file}`
-	echo "$_FILE" | critical --base ./ --folder "`dirname ${file}`/" --inline > ${file}
-done
+# cd _site
+# for file in $(find ./ -type f -name '*.html'); do
+# 	_FILE=`cat ${file}`
+# 	echo "$_FILE" | critical --base ./ --folder "`dirname ${file}`/" --inline > ${file}
+# done
 
 
 exit 0

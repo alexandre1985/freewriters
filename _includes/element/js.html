@@ -1,4 +1,1 @@
-{% assign protocol = include.asset | slice: 0, 3 %}{% 
-if protocol == 'http' %}<script src="{{ include.asset }}" crossorigin="anonymous" defer></script>{% 
-else %}<script src="{{ include.asset | bustify }}" crossorigin="anonymous" defer></script>{% 
-endif %}
+<script src="{{ include.asset | bustify }}" crossorigin="anonymous" defer></script>

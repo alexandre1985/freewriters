@@ -21,7 +21,7 @@ module UncssWrapper
         tempfileUncssrc.flush
 
         begin
-            result = `uncss --uncssrc '#{tempfileUncssrc.path}' '#{files.join("' '")}' 2>&1`
+            result = `uncss --uncssrc '#{tempfileUncssrc.path}' '#{files.join("' '")}' 2> /dev/null`
         rescue Exception => e
             raise Error, "uncss failed: #{e} :: #{result}"
         ensure

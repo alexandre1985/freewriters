@@ -137,8 +137,7 @@ Vue.component('Library', {
 				return null;
 			}
 			this.firstUse = false;
-			fetch('/get-library-books.php?currentpage=' + page)
-			.then(function(resp) {
+			fetch('/get-library-books.php?currentpage=' + page).then(function(resp) {
 				resp.json().then(function(json) {
 					this.error = json.error;
 					if(!this.error) {

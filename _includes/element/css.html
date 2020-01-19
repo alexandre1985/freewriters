@@ -1,1 +1,4 @@
-<link rel="stylesheet" href="{{ include.asset | bustify }}" crossorigin="anonymous">
+{% if page.critical.enabled
+%}<link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="{{ include.asset | bustify }}" crossorigin="anonymous">{% else 
+%}<link rel="stylesheet" href="{{ include.asset | bustify }}" crossorigin="anonymous">
+{% endif %}

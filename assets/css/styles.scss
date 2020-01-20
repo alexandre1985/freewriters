@@ -8,14 +8,14 @@ $fontDir: "{{ site.local.fonts }}";
 // Partials
 
 
-@import "fonts-local";
+@import "bootstrap";
+@import "freewriters";
 
-// has to be commented out and in a css apart (because of uncss) @import "bootstrap";
+@import "fonts-local";
 
 @import "customizable-background-overlay";
 @import "footer-clean";
 @import "highlight-phone";
-@import "freewriters";
 @import "styles";
 @import "contact-form-clean";
 

@@ -60,7 +60,7 @@ languages: ['en']
 #flags: ["pt", "gb"]
 
 ## files/directories to exclude from being inserted in each language folder
-#exclude_from_localizations: ["assets", "favicon.ico", "CNAME", "LICENSE"]
+exclude_from_localizations: ["assets", "CNAME", "LICENSE", "favicon.ico"]
 
 # local (on-premise) storage
 local:
@@ -115,12 +115,14 @@ plugins:
 # to override the default setting.
 exclude:
   - sql-files
+  - README.md
   - uglify
   - build
-  - README.md
+  - bundle
+  - '*.json'
+  - '*.lock'
   - .git/
   - Gemfile
-  - Gemfile.lock
   - node_modules
   - vendor/bundle/
   - vendor/cache/

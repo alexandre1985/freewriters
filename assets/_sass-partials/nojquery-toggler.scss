@@ -1,11 +1,24 @@
-#checkbox-menu-toggle:not(:checked) + .navbar-collapse {
-  display: none;
-}
-
 label[for=checkbox-menu-toggle] {
   cursor: pointer;
 }
 
 .dropdown-menu.show {
   display: block;
+}
+
+@media (max-width: 991.98px) {
+
+	#checkbox-menu-toggle + .navbar-collapse {
+		overflow: hidden;
+		transition: max-height 1222ms ease;
+	}
+  
+	#checkbox-menu-toggle:not(:checked) + .navbar-collapse {
+		max-height: 0;
+	}
+
+	#checkbox-menu-toggle:checked + .navbar-collapse {
+		max-height: 343px;
+	}
+
 }

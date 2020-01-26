@@ -9,8 +9,10 @@
   height: 53px;
 }
 
-.navbar-collapse {
-  margin-top: 8px;
+@media (max-width: 991.98px) {
+  .navbar-collapse ul li:first-child {
+    margin-top: 8px;
+  }
 }
 
 @media (min-width: 992px) {

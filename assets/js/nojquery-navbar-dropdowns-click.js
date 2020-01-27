@@ -18,9 +18,13 @@ function hideDDMenus(exceptElement) {
 }
 
 for (let j = 0; j < dds.length; j++) {
-	dds[j].addEventListener('click', function() {
-		let ddmenu = ddmenus[j]
-		hideDDMenus(ddmenu)
-		toggleDisplay(ddmenu)
+	['click','ontouchstart'].forEach(function(evt) {
+
+		dds[j].addEventListener(evt, function() {
+			let ddmenu = ddmenus[j]
+			hideDDMenus(ddmenu)
+			toggleDisplay(ddmenu)
+		})
+		
 	})
 }

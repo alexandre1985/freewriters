@@ -1,1 +1,1 @@
-<script src="{{ include.asset | bustify }}" crossorigin="anonymous" defer></script>
+<script src="{{ site.local.javascript }}{{ include.asset | bustify }}" crossorigin="anonymous"{% if include.defer != "false" %} defer{% endif %}></script>

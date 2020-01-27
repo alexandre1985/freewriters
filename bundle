@@ -1,15 +1,20 @@
 #!/bin/bash
 
-MAIN_JS=script.js
+MAIN_JS=scripts.js
+
+EXCLUDE_FILES='lang.js lang.min.js'
+
 
 # js uglify
 cd assets/js/
 
 rm ${MAIN_JS}
 
-for file in *[^.min].js
+echo 'Bundling up the JavaScripts...'
+
+for file in *.js
 do
-	if [[ "${file}" == "${MAIN_JS}" ]]; then
+	if [[ "${MAIN_JS} ${MAIN_JS%.*}.min.js ${EXCLUDE_FILES}" =~ "${file}" ]]; then
 		continue
 	fi
 	(cat ${file};echo) >> ${MAIN_JS}

@@ -105,10 +105,8 @@ compress_html:
 # enable this if you want to process markdown files (*.md) on this site
 # markdown: kramdown
 
-plugins:
-  - jekyll-multiple-languages-plugin
-  - jekyll-last-modified-at
-  - jekyll-sitemap
+# plugins:
+#   - some-plugin
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

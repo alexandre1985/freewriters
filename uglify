@@ -3,7 +3,7 @@
 # js uglify
 cd assets/js/
 
-for file in *[^.min].js
+for file in "scripts.js"
 do
 	terser ${file} --compress --mangle > "${file%.*}.min.js"
 done

@@ -12,7 +12,7 @@ rm ${MAIN_JS}
 
 echo 'Bundling up the JavaScripts...'
 
-for file in *.js
+for file in *[^.min].js
 do
 	if [[ "${MAIN_JS} ${MAIN_JS%.*}.min.js ${EXCLUDE_FILES}" =~ "${file}" ]]; then
 		continue

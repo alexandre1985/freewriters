@@ -5,3 +5,9 @@
 <!-- Normal CSS -->
 {% endif %}
 {% include element/css.html asset="/assets/css/styles.css" %}
+
+{% if page.assets.css %}{% 
+for asset-css in page.assets.css %}{% 
+include element/css.html asset=asset-css %}
+{% endfor %}{% 
+endif %}

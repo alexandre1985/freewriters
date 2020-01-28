@@ -2,19 +2,29 @@
 
 MAIN_JS=scripts.js
 
-EXCLUDE_FILES='lang.js lang.min.js'
+EXCLUDE_FILES='lang.js lazysizes.js'
+
+
+EXCLUDE_FILES+=" ${MAIN_JS}"
+
+# adding min.js to excluded files
+for file in ${EXCLUDE_FILES}; do
+	EXCLUDE_FILES+=" ${file%.*}.min.js"
+done
 
 
 # js uglify
 cd assets/js/
 
-rm ${MAIN_JS}
+if [[ -e ${MAIN_JS} ]]; then
+	rm ${MAIN_JS}
+fi
 
 echo 'Bundling up the JavaScripts...'
 
-for file in *[^.min].js
+for file in *.js
 do
-	if [[ "${MAIN_JS} ${MAIN_JS%.*}.min.js ${EXCLUDE_FILES}" =~ "${file}" ]]; then
+	if [[ "${EXCLUDE_FILES}" =~ "${file}" ]]; then
 		continue
 	fi
 	(cat ${file};echo) >> ${MAIN_JS}

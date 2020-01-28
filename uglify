@@ -1,10 +1,13 @@
 #!/bin/bash
 
+echo 'Uglifying the JavaScripts...'
+
+FILES='lang.js lazysizes.js scripts.js'
+
 # js uglify
 cd assets/js/
 
-for file in "scripts.js"
-do
+for file in ${FILES}; do
 	terser ${file} --compress --mangle > "${file%.*}.min.js"
 done
 

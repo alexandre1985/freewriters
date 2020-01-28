@@ -9,10 +9,10 @@
 <meta property="og:locale" content="{{ page.description | default: site.lang }}" />
 <meta property="og:description" content="{{ site.description }}" />
 <meta property="og:url" content="{{ site.url }}{{ site.baseurl | remove: 'index.html' }}" />
-<meta property="og:site_name" content="{{ site.title }}" />
+<meta property="og:site_name" content="{% t title %}" />
 <meta property="og:image" content="{{ site.url }}{{ page.image | default: '/assets/img/wix-logo-big-final.png' | bustify }}" />
 
-<meta name="twitter:title" content="{{ site.title }}">
+<meta name="twitter:title" content="{% t title %}">
 <meta name="twitter:description" content="{{ page.description | default: site.description }}">
 <meta name="twitter:image" content="{{ site.url }}{{ page.image | default: '/assets/img/wix-logo-big-final.png' | bustify }}">
 <meta name="twitter:card" content="summary_large_image">

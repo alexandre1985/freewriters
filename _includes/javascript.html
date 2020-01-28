@@ -1,7 +1,12 @@
 <!-- JAVASCRIPT -->
 {% include element/js.html asset='lazysizes.min.js' %}
-
 {% include element/js.html asset='scripts.min.js' %}
+
+{% if page.assets.js %}{% 
+for asset-js in page.assets.js %}{% 
+include element/js.html asset=asset-js %}
+{% endfor %}{% 
+endif %}
 
 {% if page.vue.enable %}
 {% include element/js.html asset='vue/vue2.min.js' %}

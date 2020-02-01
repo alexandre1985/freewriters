@@ -1,19 +1,24 @@
 #!/bin/bash
 
+echo 'Start building script...'
+
 CMD_BUILD="JEKYLL_ENV=production bundle exec jekyll build"
 
-# Bundle Javascripts
+# Javascripts
 
-./bundle
+export MAIN_JS=scripts.js
 
-# UglifyJS
+## Bundle Javascripts
+source bundlify
 
-./uglify
-
+## UglifyJS
+source uglify
 
 # Build
 
 #JEKYLL_ENV=production bundle exec jekyll build && JEKYLL_ENV=production bundle exec jekyll build
+
+echo 'Jekyll building...'
 
 eval "${CMD_BUILD}"
 

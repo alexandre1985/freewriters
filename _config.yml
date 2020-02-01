@@ -115,7 +115,7 @@ exclude:
   - README.md
   - uglify
   - build
-  - bundle
+  - bundlify
   - '*.json'
   - '*.lock'
   - .git/

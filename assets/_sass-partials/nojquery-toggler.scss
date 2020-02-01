@@ -6,6 +6,10 @@ label[for=checkbox-menu-toggle] {
   display: block;
 }
 
+.navbar-collapse {
+	display: block;
+}
+
 @media (max-width: 991.98px) {
 
 	#checkbox-menu-toggle + .navbar-collapse {

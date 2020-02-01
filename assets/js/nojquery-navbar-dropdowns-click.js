@@ -1,5 +1,7 @@
-const dds = document.getElementsByClassName('dropdown-toggle')
-const ddmenus = document.getElementsByClassName('dropdown-menu')
+/* DropDowns */
+
+const dds = $a('.dropdown-toggle')
+const ddmenus = $a('.dropdown-menu')
 
 function toggleDisplay(el) {
 	if (el.style.display === 'block') {
@@ -28,3 +30,5 @@ for (let j = 0; j < dds.length; j++) {
 		
 	})
 }
+
+/* Navbar ARIA */

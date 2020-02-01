@@ -1,12 +1,16 @@
-var bookForm = document.getElementById('form-book-upload');
+// MyQuery
+let $o = arg => document.querySelector(arg)
+let $a = arg => document.querySelectorAll(arg)
+
+var bookForm = $o('#form-book-upload');
 
 var filelist, file, formHasBook;
 
 if(bookForm && bookForm.length) {
   
-  bookForm.addEventListener("submit", function(event) {
+  bookForm.addEventListener('submit', function(event) {
     
-    var buttons_of_books = document.querySelectorAll('#form-book-upload .book');
+    var buttons_of_books = $a('#form-book-upload .book');
 
     formHasBook = false;
 
@@ -37,10 +41,12 @@ const myParam = urlParams.get('form');
 
 if(myParam) {
   const index = Number(myParam);
-  document.querySelectorAll('option')[index].selected = true;
+  $a('option')[index].selected = true;
 }
-const dds = document.getElementsByClassName('dropdown-toggle')
-const ddmenus = document.getElementsByClassName('dropdown-menu')
+/* DropDowns */
+
+const dds = $a('.dropdown-toggle')
+const ddmenus = $a('.dropdown-menu')
 
 function toggleDisplay(el) {
 	if (el.style.display === 'block') {
@@ -69,5 +75,8 @@ for (let j = 0; j < dds.length; j++) {
 		
 	})
 }
+
+/* Navbar ARIA */
+
 let ano = new Date().getFullYear();
 document.getElementsByClassName('ano')[0].innerHTML = ano;

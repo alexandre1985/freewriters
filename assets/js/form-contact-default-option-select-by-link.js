@@ -3,5 +3,5 @@ const myParam = urlParams.get('form');
 
 if(myParam) {
   const index = Number(myParam);
-  document.querySelectorAll('option')[index].selected = true;
+  $a('option')[index].selected = true;
 }

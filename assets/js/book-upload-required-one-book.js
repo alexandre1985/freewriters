@@ -1,12 +1,12 @@
-var bookForm = document.getElementById('form-book-upload');
+var bookForm = $o('#form-book-upload');
 
 var filelist, file, formHasBook;
 
 if(bookForm && bookForm.length) {
   
-  bookForm.addEventListener("submit", function(event) {
+  bookForm.addEventListener('submit', function(event) {
     
-    var buttons_of_books = document.querySelectorAll('#form-book-upload .book');
+    var buttons_of_books = $a('#form-book-upload .book');
 
     formHasBook = false;
 

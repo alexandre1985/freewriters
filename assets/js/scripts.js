@@ -78,5 +78,11 @@ for (let j = 0; j < dds.length; j++) {
 
 /* Navbar ARIA */
 
+let navbarToggler = $o('.navbar-toggler')
+
+navbarToggler.addEventListener('click', function(evt) {
+	let ariaExpanded = (navbarToggler.getAttribute('aria-expanded') === 'true')
+	navbarToggler.setAttribute('aria-expanded', !ariaExpanded)
+})
 let ano = new Date().getFullYear();
 document.getElementsByClassName('ano')[0].innerHTML = ano;

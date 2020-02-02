@@ -1,4 +1,22 @@
-# Picture Tag
+# Picture Ta
+
 markup_presets:
   default:
     formats: [webp]
+    widths: [200, 400, 800, 1600]
+    format_quality:
+      jpg: 75
+      png: 65
+      webp: 55
+  lazy:
+    formats: [webp]
+    widths: [200, 400, 800, 1600]
+    format_quality:
+      jpg: 75
+      png: 65
+      webp: 55
+    link_source: true
+    markup: data_auto
+    noscript: true
+    attributes:
+      img: class="lazyload"

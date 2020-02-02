@@ -1,6 +1,5 @@
-{%if include.lazy
-%}{% capture image
-%}{% picture "{{ include.src }}" --img class="lazyload {{ include.class }}" style="{{ include.style }}" --alt {{ include.alt }} %}{% 
-endcapture
-%}{{ image | replace: 'srcset=', 'data-srcset=' }}{% else 
-%}{% picture "{{ include.src }}" --img class="{{ include.class }}" style="{{ include.style }}" --alt {{ include.alt }} %}{% endif %}
+{%- if include.lazy -%}
+{% picture lazy "{{ include.src }}" --img class="{{ include.class }}" style="{{ include.style }}" --alt {{ include.alt }} %}
+{%- else -%}
+{% picture "{{ include.src }}" --img class="{{ include.class }}" style="{{ include.style }}" --alt {{ include.alt }} %}
+{%- endif -%}

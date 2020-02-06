@@ -1,16 +1,34 @@
 # Picture Ta
+media_presets:
+  xs: 'min-width: 1px'
+  sm: 'min-width: 576px'
+  md: 'min-width: 768px'
+  lg: 'min-width: 992px'
+  xl: 'min-width: 1200px'
 
 markup_presets:
   default:
     formats: [webp]
-    widths: [200, 400, 800, 1600]
+    widths: [576, 768, 992, 1200, 1600]
+    sizes:
+      xl: 1600px
+      lg: 1200px
+      md: 992px
+      sm: 768px
+      xs: 576px
     format_quality:
       jpg: 75
       png: 65
       webp: 55
   lazy:
     formats: [webp]
-    widths: [200, 400, 800, 1600]
+    widths: [576, 768, 992, 1200, 1600]
+    sizes:
+      xl: 1600px
+      lg: 1200px
+      md: 992px
+      sm: 768px
+      xs: 576px
     format_quality:
       jpg: 75
       png: 65

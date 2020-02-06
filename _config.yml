@@ -59,7 +59,11 @@ languages: ['en']
 #flags: ["pt", "gb"]
 
 ## files/directories to exclude from being inserted in each language folder
-exclude_from_localizations: ["assets", "CNAME", "LICENSE", "favicon.ico"]
+exclude_from_localizations:
+  - "assets"
+  - "CNAME"
+  - "LICENSE"
+  - "favicon.ico"
 
 # local (on-premise) storage
 local:

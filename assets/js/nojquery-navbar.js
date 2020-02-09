@@ -33,9 +33,16 @@ for (let j = 0; j < dds.length; j++) {
 
 /* Navbar ARIA */
 
+function ariaToggle(togglerEl, bool=null) {
+	if(bool === null) {
+		// toggle
+		bool = (togglerEl.getAttribute('aria-expanded') !== 'true')
+	}
+	togglerEl.setAttribute('aria-expanded', bool)
+}
+
 let navbarToggler = $o('.navbar-toggler')
 
 navbarToggler.addEventListener('click', function(evt) {
-	let ariaExpanded = (navbarToggler.getAttribute('aria-expanded') === 'true')
-	navbarToggler.setAttribute('aria-expanded', !ariaExpanded)
+	ariaToggle(navbarToggler)
 })

@@ -23,6 +23,9 @@ url: "https://www.freewriters.org" # the base hostname & protocol for your site,
 description: "We want to teach people how to create a book for free, without any expenses, using free LaTeX technology." # >- # this means to ignore newlines
 email: contact@freewriters.org
 
+founder:
+  site: https://www.brighterdan.com
+
 social:
   facebook: https://fb.me/freewriters.community
   youtube: https://www.youtube.com/channel/UC_Dm9m3Zi6tEYA8rJt3OqVw

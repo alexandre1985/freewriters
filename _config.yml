@@ -55,7 +55,8 @@ founder:
 # jekyll-multiple-languages-plugin
 
 ## site languages
-languages: ['en']
+languages: 
+  - en
 
 ### flags country codes (fetch from https://www.countryflags.io/ - in more in that website)
 ### must be in the same order as the "language" variable

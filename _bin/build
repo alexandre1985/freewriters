@@ -2,21 +2,20 @@
 
 echo 'Start building script...'
 
-CMD_BUILD="JEKYLL_ENV=production bundle exec jekyll build"
+CMD_BUILD="JEKYLL_ENV=production bundle exec jekyll build 2> /dev/null"
 
 # Javascripts
 
 export MAIN_JS=scripts.js
 
 ## Bundle Javascripts
-source bundlify
+source _bin/bundlify
 
 ## UglifyJS
-source uglify
+source _bin/uglify
+
 
 # Build
-
-#JEKYLL_ENV=production bundle exec jekyll build && JEKYLL_ENV=production bundle exec jekyll build
 
 echo 'Jekyll building...'
 

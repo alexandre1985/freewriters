@@ -1,0 +1,18 @@
+#!/bin/bash
+
+echo 'Bundling up the JavaScripts...'
+
+cd assets/js/
+
+if [[ -e ${MAIN_JS} ]]; then
+    rm ${MAIN_JS}
+fi
+
+
+for file in `find . -type f ! -name "_*" ! -name "*.min.js" ! -wholename "./**/*" -name "*.js" | sort`
+do
+    ( cat ${file} ; echo ) >> ${MAIN_JS}
+done
+
+
+cd ${OLDPWD} > /dev/null

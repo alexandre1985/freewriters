@@ -1,0 +1,10 @@
+#!/bin/bash
+
+echo 'Initializing project...'
+
+npm install
+bundle install
+
+echo 'Initializing done'
+
+exit 0

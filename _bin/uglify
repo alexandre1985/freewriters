@@ -4,7 +4,7 @@ echo 'Uglifying the JavaScripts...'
 
 cd assets/js/
 
-for file in _*[^.min].js; do
+for file in _*.js; do
 	
 	if [[ ${file} == _* ]]; then
 		OUTPUT_FILE=${file#"_"}
@@ -13,7 +13,7 @@ for file in _*[^.min].js; do
 	fi
 
 	OUTPUT_FILE="${OUTPUT_FILE%.*}.min.js"
-
+    
 	terser ${file} --compress --mangle > "${OUTPUT_FILE}"
 done
 

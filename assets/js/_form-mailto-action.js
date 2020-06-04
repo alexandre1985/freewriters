@@ -2,13 +2,22 @@ $o('form button[type=submit]').addEventListener('click', function(evt) {
     
     evt.preventDefault()
     
-    const form = evt.target.parentElement.parentElement
+    alert('Now, it will open your email client, for you to send a message?')
     
-    const sendToEmail = 'contact@freewriters.org'
+    const form = evt.target.closest('form')
+    
+    const sendToEmail = form.dataset.email
     
     const email = form.querySelector('input[type=email]').value
     const subject = form.querySelector('*[name=_subject]').value
-    const message = form.querySelector('textarea[name=message]').value
+    const name = form.querySelector('input[name=name]').value
+    const text = form.querySelector('textarea[name=message]').value
+    
+    const message =
+`${text}
+
+---
+${name}`
     
     const mailtoLink = 'mailto:' + sendToEmail + '?body=' + encodeURIComponent(message) + '&subject=' + encodeURIComponent(subject)
     

@@ -20,7 +20,7 @@ source "https://rubygems.org"
 # If you have any plugins, put them here!
 
 #gem "uglifier"
-#gem "sass"
+gem "sass"
 
 # other plugins ;)
 # gem "jekyll-minifier" # no longer needed, a more eficient substitute was found

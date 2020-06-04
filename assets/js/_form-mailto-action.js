@@ -13,14 +13,9 @@ $o('form button[type=submit]').addEventListener('click', function(evt) {
     const name = form.querySelector('input[name=name]').value
     const text = form.querySelector('textarea[name=message]').value
     
-    const message =
-`${text}
-
----
-${name}`
+    const message = text + '\r\n\r\n---\r\n' + name
     
     const mailtoLink = 'mailto:' + sendToEmail + '?body=' + encodeURIComponent(message) + '&subject=' + encodeURIComponent(subject)
-    
     
     window.open(mailtoLink)
 });

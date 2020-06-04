@@ -10,12 +10,18 @@ String.prototype.capitalizeWords = function() {
 }
 
 
-$o('form input[name=name]').addEventListener('keyup', function(evt) {
-    evt.target.value = evt.target.value.capitalizeWords()
+$o('form button[type=submit]').addEventListener('mouseup', function(evt) {
+    
+    const nameField = $o('form input[name=name]')
+    
+    // Capitalize every word of a Name
+    nameField.value = nameField.value.capitalizeWords()
+    
 })
 
 $o('form textarea').addEventListener('keyup', function(evt) {
     
+    // Capitalize first letter of Message Text
     evt.target.value.length < 5 ? evt.target.value = evt.target.value.capitalize() : 0
     
 })

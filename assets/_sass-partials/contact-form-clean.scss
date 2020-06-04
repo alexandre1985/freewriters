@@ -88,3 +88,6 @@
   color: #fff;
 }
 
+form input[name=name] {
+    text-transform: capitalize;
+}
